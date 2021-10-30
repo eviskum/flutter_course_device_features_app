@@ -1,2 +1,3 @@
 lib/helpers/keys_helper.dart filter=git-crypt diff=git-crypt
+ios/Runner/Keys.swift filter=git-crypt diff=git-crypt
 .gitattributes !filter !diff
