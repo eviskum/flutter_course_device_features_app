@@ -24,9 +24,9 @@ class GreatPlaces with ChangeNotifier {
       'id': newPlace.id,
       'title': newPlace.title,
       'image': newPlace.image.path,
-      'loc_lat': newPlace.location!.latitude,
-      'loc_lng': newPlace.location!.longitude,
-      'loc_address': newPlace.location!.address ?? ''
+      'loc_lat': newPlace.location.latitude,
+      'loc_lng': newPlace.location.longitude,
+      'loc_address': newPlace.location.address ?? ''
     });
   }
 

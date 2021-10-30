@@ -24,7 +24,7 @@ class PlaceDetailScreen extends StatelessWidget {
               child: Image.file(selectedPlace.image, fit: BoxFit.cover, width: double.infinity)),
           SizedBox(height: 10),
           Text(
-            selectedPlace.location!.address ?? ' ',
+            selectedPlace.location.address ?? ' ',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 20, color: Colors.grey),
           ),
@@ -33,7 +33,7 @@ class PlaceDetailScreen extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(
                 fullscreenDialog: true,
-                builder: (context) => MapScreen(initialLocation: selectedPlace.location!),
+                builder: (context) => MapScreen(initialLocation: selectedPlace.location),
               ));
             },
             child: Text('View on Map'),
