@@ -1,8 +1,7 @@
 import 'dart:convert';
 
+import 'package:flutter_course_device_features_app/helpers/keys_helper.dart';
 import 'package:http/http.dart' as http;
-
-const GOOGLE_API_KEY = 'AIzaSyD2uczrd1slIptKVdI9rOrYI89Bk-lgygs';
 
 class LocationHelper {
   static String generateLocationPreviewImage({required double latitude, required double longitude}) {
